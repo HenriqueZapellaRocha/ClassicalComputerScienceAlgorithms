@@ -1,6 +1,6 @@
 import heapq
 import math
-import time
+
 
 
 
@@ -39,9 +39,6 @@ def dijkstra(graph,start):
     return verticesWeight
         
             
-        
-        
-    
 graph = {}
 vertices = []
 with open('Dijkstra/grafo.txt', 'r') as archive:
@@ -49,7 +46,9 @@ with open('Dijkstra/grafo.txt', 'r') as archive:
         originVertex, rest = line.split(" -> ")
         finalVertex, edgeWeight = rest.strip().split(" : ")
         addToGraph(graph,originVertex,finalVertex,int(edgeWeight),vertices)
+        addToGraph(graph,finalVertex,originVertex,int(edgeWeight),vertices)
 
+print(graph)
 dijkstraa = dijkstra(graph,"A")
 print(dijkstraa)
 print(len(dijkstraa))
