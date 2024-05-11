@@ -1,5 +1,4 @@
 import heapq
-from locale import currency
 import math
 import time
 
