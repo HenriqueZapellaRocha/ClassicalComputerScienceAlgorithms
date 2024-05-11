@@ -1,99 +1,706 @@
-1 -> 2: 3
-2 -> 3: 5
-3 -> 4: 2
-4 -> 5: 7
-5 -> 6: 1
-6 -> 7: 4
-7 -> 8: 6
-8 -> 9: 8
-9 -> 10: 2
-10 -> 11: 9
-11 -> 12: 3
-12 -> 13: 5
-13 -> 14: 7
-14 -> 15: 4
-15 -> 16: 2
-16 -> 17: 6
-17 -> 18: 3
-18 -> 19: 1
-19 -> 20: 5
-20 -> 21: 7
-21 -> 22: 9
-22 -> 23: 4
-23 -> 24: 2
-24 -> 25: 6
-25 -> 26: 8
-26 -> 27: 3
-27 -> 28: 5
-28 -> 29: 1
-29 -> 30: 4
-30 -> 31: 6
-31 -> 32: 8
-32 -> 33: 2
-33 -> 34: 9
-34 -> 35: 5
-35 -> 36: 7
-36 -> 37: 3
-37 -> 38: 1
-38 -> 39: 4
-39 -> 40: 6
-40 -> 41: 8
-41 -> 42: 2
-42 -> 43: 9
-43 -> 44: 5
-44 -> 45: 3
-45 -> 46: 7
-46 -> 47: 4
-47 -> 48: 6
-48 -> 49: 8
-49 -> 50: 1
-50 -> 51: 2
-51 -> 52: 9
-52 -> 53: 5
-53 -> 54: 3
-54 -> 55: 7
-55 -> 56: 4
-56 -> 57: 6
-57 -> 58: 8
-58 -> 59: 2
-59 -> 60: 1
-60 -> 61: 9
-61 -> 62: 5
-62 -> 63: 3
-63 -> 64: 7
-64 -> 65: 4
-65 -> 66: 6
-66 -> 67: 8
-67 -> 68: 2
-68 -> 69: 1
-69 -> 70: 9
-70 -> 71: 5
-71 -> 72: 3
-72 -> 73: 7
-73 -> 74: 4
-74 -> 75: 6
-75 -> 76: 8
-76 -> 77: 2
-77 -> 78: 1
-78 -> 79: 9
-79 -> 80: 5
-80 -> 81: 3
-81 -> 82: 7
-82 -> 83: 4
-83 -> 84: 6
-84 -> 85: 8
-85 -> 86: 2
-86 -> 87: 1
-87 -> 88: 9
-88 -> 89: 5
-89 -> 90: 3
-90 -> 91: 7
-91 -> 92: 4
-92 -> 93: 6
-93 -> 94: 8
-94 -> 95: 2
-95 -> 96: 1
-96 -> 97: 9
-97 -> 98: 5
-98 -> 99: 3
-99 -> 100: 7
+A -> B : 2
+A -> C : 5
+B -> D : 3
+B -> E : 4
+C -> F : 6
+C -> G : 1
+D -> H : 7
+D -> I : 2
+E -> J : 4
+E -> K : 5
+F -> L : 3
+F -> M : 2
+G -> N : 6
+G -> O : 3
+H -> P : 5
+H -> Q : 1
+I -> R : 4
+I -> S : 2
+J -> T : 3
+J -> U : 6
+K -> V : 2
+K -> W : 4
+L -> X : 5
+L -> Y : 3
+M -> Z : 7
+M -> AA : 1
+N -> AB : 3
+N -> AC : 5
+O -> AD : 4
+O -> AE : 2
+P -> AF : 3
+P -> AG : 6
+Q -> AH : 4
+Q -> AI : 2
+R -> AJ : 5
+R -> AK : 1
+S -> AL : 6
+S -> AM : 3
+T -> AN : 4
+T -> AO : 2
+U -> AP : 3
+U -> AQ : 5
+V -> AR : 1
+V -> AS : 7
+W -> AT : 2
+W -> AU : 3
+X -> AV : 5
+X -> AW : 4
+Y -> AX : 6
+Y -> AY : 1
+Z -> AZ : 3
+Z -> BA : 5
+AA -> BB : 2
+AA -> BC : 4
+AB -> BD : 1
+AB -> BE : 3
+AC -> BF : 6
+AC -> BG : 4
+AD -> BH : 5
+AD -> BI : 2
+AE -> BJ : 3
+AE -> BK : 1
+AF -> BL : 4
+AF -> BM : 7
+AG -> BN : 2
+AG -> BO : 5
+AH -> BP : 3
+AH -> BQ : 4
+AI -> BR : 6
+AI -> BS : 1
+AJ -> BT : 5
+AJ -> BU : 3
+AK -> BV : 2
+AK -> BW : 6
+AL -> BX : 4
+AL -> BY : 2
+AM -> BZ : 7
+AM -> CA : 3
+AN -> CB : 5
+AN -> CC : 4
+AO -> CD : 2
+AO -> CE : 1
+AP -> CF : 3
+AP -> CG : 5
+AQ -> CH : 6
+AQ -> CI : 4
+AR -> CJ : 7
+AR -> CK : 2
+AS -> CL : 4
+AS -> CM : 5
+AT -> CN : 3
+AT -> CO : 1
+AU -> CP : 6
+AU -> CQ : 3
+AV -> CR : 5
+AV -> CS : 2
+AW -> CT : 4
+AW -> CU : 7
+AX -> CV : 3
+AX -> CW : 5
+AY -> CX : 2
+AY -> CY : 4
+AZ -> CZ : 6
+AZ -> CZ : 1
+BA -> DZ : 7
+BA -> DA : 3
+BB -> DB : 4
+BB -> DC : 2
+BC -> DD : 6
+BC -> DE : 5
+BD -> DF : 3
+BD -> DG : 1
+BE -> DH : 7
+BE -> DI : 4
+BF -> DJ : 5
+BF -> DK : 2
+BG -> DL : 6
+BG -> DM : 3
+BH -> DN : 4
+BH -> DO : 1
+BI -> DP : 5
+BI -> DQ : 7
+BJ -> DR : 3
+BJ -> DS : 2
+BK -> DT : 6
+BK -> DU : 4
+BL -> DV : 1
+BL -> DW : 5
+BM -> DX : 4
+BM -> DY : 3
+BN -> DZ : 2
+BN -> EA : 7
+BO -> EB : 5
+BO -> EC : 1
+BP -> ED : 3
+BP -> EE : 4
+BQ -> EF : 2
+BQ -> EG : 6
+BR -> EH : 5
+BR -> EI : 3
+BS -> EJ : 7
+BS -> EK : 1
+BT -> EL : 4
+BT -> EM : 2
+BU -> EN : 6
+BU -> EO : 3
+BV -> EP : 5
+BV -> EQ : 4
+BW -> ER : 7
+BW -> ES : 2
+BX -> ET : 4
+BX -> EU : 6
+BY -> EV : 3
+BY -> EW : 1
+BZ -> EX : 7
+BZ -> EY : 5
+CA -> EZ : 3
+CA -> FA : 4
+CB -> FB : 6
+CB -> FC : 2
+CC -> FD : 5
+CC -> FE : 1
+CD -> FF : 7
+CD -> FG : 3
+CE -> FH : 5
+CE -> FI : 4
+CF -> FJ : 2
+CF -> FK : 6
+CG -> FL : 3
+CG -> FM : 7
+CH -> FN : 5
+CH -> FO : 2
+CI -> FP : 4
+CI -> FQ : 1
+CJ -> FR : 3
+CJ -> FS : 6
+CK -> FT : 5
+CK -> FU : 4
+CL -> FV : 7
+CL -> FW : 2
+CM -> FX : 3
+CM -> FY : 5
+CN -> FZ : 6
+CN -> GA : 1
+CO -> GB : 4
+CO -> GC : 7
+CP -> GD : 3
+CP -> GE : 2
+CQ -> GF : 5
+CQ -> GG : 3
+CR -> GH : 1
+CR -> GI : 6
+CS -> GJ : 4
+CS -> GK : 5
+CT -> GL : 2
+CT -> GM : 7
+CU -> GN : 3
+CU -> GO : 4
+CV -> GP : 5
+CV -> GQ : 6
+CW -> GR : 7
+CW -> GS : 1
+CX -> GT : 2
+CX -> GU : 3
+CY -> GV : 4
+CY -> GW : 5
+CZ -> GX : 6
+CZ -> GY : 7
+DA -> HZ : 1
+DA -> HA : 2
+DB -> HB : 3
+DB -> HC : 4
+DC -> HD : 5
+DC -> HE : 6
+DD -> HF : 7
+DD -> HG : 1
+DE -> HH : 2
+DE -> HI : 3
+DF -> HJ : 4
+DF -> HK : 5
+DG -> HL : 6
+DG -> HM : 7
+DH -> HN : 1
+DH -> HO : 2
+DI -> HP : 3
+DI -> HQ : 4
+DJ -> HR : 5
+DJ -> HS : 6
+DK -> HT : 7
+DK -> HU : 1
+DL -> HV : 2
+DL -> HW : 3
+DM -> HX : 4
+DM -> HY : 5
+DN -> HZ : 6
+DN -> IA : 7
+DO -> IB : 1
+DO -> IC : 2
+DP -> ID : 3
+DP -> IE : 4
+DQ -> IF : 5
+DQ -> IG : 6
+DR -> IH : 7
+DR -> II : 1
+DS -> IJ : 2
+DS -> IK : 3
+DT -> IL : 4
+DT -> IM : 5
+DU -> IN : 6
+DU -> IO : 7
+DV -> IP : 1
+DV -> IQ : 2
+DW -> IR : 3
+DW -> IS : 4
+DX -> IT : 5
+DX -> IU : 6
+DY -> IV : 7
+DY -> IW : 1
+DZ -> IX : 2
+DZ -> IY : 3
+EA -> IZ : 4
+EA -> JA : 5
+EB -> JB : 6
+EB -> JC : 7
+EC -> JD : 1
+EC -> JE : 2
+ED -> JF : 3
+ED -> JG : 4
+EE -> JH : 5
+EE -> JI : 6
+EF -> JJ : 7
+EF -> JK : 1
+EG -> JL : 2
+EG -> JM : 3
+EH -> JN : 4
+EH -> JO : 5
+EI -> JP : 6
+EI -> JQ : 7
+EJ -> JR : 1
+EJ -> JS : 2
+EK -> JT : 3
+EK -> JU : 4
+EL -> JV : 5
+EL -> JW : 6
+EM -> JX : 7
+EM -> JY : 1
+EN -> JZ : 2
+EN -> KA : 3
+EO -> KB : 4
+EO -> KC : 5
+EP -> KD : 6
+EP -> KE : 7
+EQ -> KF : 1
+EQ -> KG : 2
+ER -> KH : 3
+ER -> KI : 4
+ES -> KJ : 5
+ES -> KK : 6
+ET -> KL : 7
+ET -> KM : 1
+EU -> KN : 2
+EU -> KO : 3
+EV -> KP : 4
+EV -> KQ : 5
+EW -> KR : 6
+EW -> KS : 7
+EX -> KT : 1
+EX -> KU : 2
+EY -> KV : 3
+EY -> KW : 4
+EZ -> KX : 5
+EZ -> KY : 6
+FA -> KZ : 7
+FA -> LA : 1
+FB -> LB : 2
+FB -> LC : 3
+FC -> LD : 4
+FC -> LE : 5
+FD -> LF : 6
+FD -> LG : 7
+FE -> LH : 1
+FE -> LI : 2
+FF -> LJ : 3
+FF -> LK : 4
+FG -> LL : 5
+FG -> LM : 6
+FH -> LN : 7
+FH -> LO : 1
+FI -> LP : 2
+FI -> LQ : 3
+FJ -> LR : 4
+FJ -> LS : 5
+FK -> LT : 6
+FK -> LU : 7
+FL -> LV : 1
+FL -> LW : 2
+FM -> LX : 3
+FM -> LY : 4
+FN -> LZ : 5
+FN -> MA : 6
+FO -> MB : 7
+FO -> MC : 1
+FP -> MD : 2
+FP -> ME : 3
+FQ -> MF : 4
+FQ -> MG : 5
+FR -> MH : 6
+FR -> MI : 7
+FS -> MJ : 1
+FS -> MK : 2
+FT -> ML : 3
+FT -> MM : 4
+FU -> MN : 5
+FU -> MO : 6
+FV -> MP : 7
+FV -> MQ : 1
+FW -> MR : 2
+FW -> MS : 3
+FX -> MT : 4
+FX -> MU : 5
+FY -> MV : 6
+FY -> MW : 7
+FZ -> MX : 1
+FZ -> MY : 2
+GA -> MZ : 3
+GA -> NA : 4
+GB -> NB : 5
+GB -> NC : 6
+GC -> ND : 7
+GC -> NE : 1
+GD -> NF : 2
+GD -> NG : 3
+GE -> NH : 4
+GE -> NI : 5
+GF -> NJ : 6
+GF -> NK : 7
+GG -> NL : 1
+GG -> NM : 2
+GH -> NN : 3
+GH -> NO : 4
+GI -> NP : 5
+GI -> NQ : 6
+GJ -> NR : 7
+GJ -> NS : 1
+GK -> NT : 2
+GK -> NU : 3
+GL -> NV : 4
+GL -> NW : 5
+GM -> NX : 6
+GM -> NY : 7
+GN -> NZ : 1
+GN -> OA : 2
+GO -> OB : 3
+GO -> OC : 4
+GP -> OD : 5
+GP -> OE : 6
+GQ -> OF : 7
+GQ -> OG : 1
+GR -> OH : 2
+GR -> OI : 3
+GS -> OJ : 4
+GS -> OK : 5
+GT -> OL : 6
+GT -> OM : 7
+GU -> ON : 1
+GU -> OO : 2
+GV -> OP : 3
+GV -> OQ : 4
+GW -> OR : 5
+GW -> OS : 6
+GX -> OT : 7
+GX -> OU : 1
+GY -> OV : 2
+GY -> OW : 3
+HZ -> OX : 4
+HZ -> OY : 5
+HA -> OZ : 6
+HA -> PA : 7
+HB -> PB : 1
+HB -> PC : 2
+HC -> PD : 3
+HC -> PE : 4
+HD -> PF : 5
+HD -> PG : 6
+HE -> PH : 7
+HE -> PI : 1
+HF -> PJ : 2
+HF -> PK : 3
+HG -> PL : 4
+HG -> PM : 5
+HH -> PN : 6
+HH -> PO : 7
+HI -> PP : 1
+HI -> PQ : 2
+HJ -> PR : 3
+HJ -> PS : 4
+HK -> PT : 5
+HK -> PU : 6
+HL -> PV : 7
+HL -> PW : 1
+HM -> PX : 2
+HM -> PY : 3
+HN -> PZ : 4
+HN -> QA : 5
+HO -> QB : 6
+HO -> QC : 7
+HP -> QD : 1
+HP -> QE : 2
+HQ -> QF : 3
+HQ -> QG : 4
+HR -> QH : 5
+HR -> QI : 6
+HS -> QJ : 7
+HS -> QK : 1
+HT -> QL : 2
+HT -> QM : 3
+HU -> QN : 4
+HU -> QO : 5
+HV -> QP : 6
+HV -> QQ : 7
+HW -> QR : 1
+HW -> QS : 2
+HX -> QT : 3
+HX -> QU : 4
+HY -> QV : 5
+HY -> QW : 6
+HZ -> QX : 7
+HZ -> QY : 1
+IA -> QZ : 2
+IA -> RA : 3
+IB -> RB : 4
+IB -> RC : 5
+IC -> RD : 6
+IC -> RE : 7
+ID -> RF : 1
+ID -> RG : 2
+IE -> RH : 3
+IE -> RI : 4
+IF -> RJ : 5
+IF -> RK : 6
+IG -> RL : 7
+IG -> RM : 1
+IH -> RN : 2
+IH -> RO : 3
+II -> RP : 4
+II -> RQ : 5
+IJ -> RR : 6
+IJ -> RS : 7
+IK -> RT : 1
+IK -> RU : 2
+IL -> RV : 3
+IL -> RW : 4
+IM -> RX : 5
+IM -> RY : 6
+IN -> RZ : 7
+IN -> SA : 1
+IO -> SB : 2
+IO -> SC : 3
+IP -> SD : 4
+IP -> SE : 5
+IQ -> SF : 6
+IQ -> SG : 7
+IR -> SH : 1
+IR -> SI : 2
+IS -> SJ : 3
+IS -> SK : 4
+IT -> SL : 5
+IT -> SM : 6
+IU -> SN : 7
+IU -> SO : 1
+IV -> SP : 2
+IV -> SQ : 3
+IW -> SR : 4
+IW -> SS : 5
+IX -> ST : 6
+IX -> SU : 7
+IY -> SV : 1
+IY -> SW : 2
+IZ -> SX : 3
+IZ -> SY : 4
+JA -> SZ : 5
+JA -> TA : 6
+JB -> TB : 7
+JB -> TC : 1
+JC -> TD : 2
+JC -> TE : 3
+JD -> TF : 4
+JD -> TG : 5
+JE -> TH : 6
+JE -> TI : 7
+JF -> TJ : 1
+JF -> TK : 2
+JG -> TL : 3
+JG -> TM : 4
+JH -> TN : 5
+JH -> TO : 6
+JI -> TP : 7
+JI -> TQ : 1
+JJ -> TR : 2
+JJ -> TS : 3
+JK -> TT : 4
+JK -> TU : 5
+JL -> TV : 6
+JL -> TW : 7
+JM -> TX : 1
+JM -> TY : 2
+JN -> TZ : 3
+JN -> UA : 4
+JO -> UB : 5
+JO -> UC : 6
+JP -> UD : 7
+JP -> UE : 1
+JQ -> UF : 2
+JQ -> UG : 3
+JR -> UH : 4
+JR -> UI : 5
+JS -> UJ : 6
+JS -> UK : 7
+JT -> UL : 1
+JT -> UM : 2
+JU -> UN : 3
+JU -> UO : 4
+JV -> UP : 5
+JV -> UQ : 6
+JW -> UR : 7
+JW -> US : 1
+JX -> UT : 2
+JX -> UU : 3
+JY -> UV : 4
+JY -> UW : 5
+JZ -> UX : 6
+JZ -> UY : 7
+KA -> UZ : 1
+KA -> VA : 2
+KB -> VB : 3
+KB -> VC : 4
+KC -> VD : 5
+KC -> VE : 6
+KD -> VF : 7
+KD -> VG : 1
+KE -> VH : 2
+KE -> VI : 3
+KF -> VJ : 4
+KF -> VK : 5
+KG -> VL : 6
+KG -> VM : 7
+KH -> VN : 1
+KH -> VO : 2
+KI -> VP : 3
+KI -> VQ : 4
+KJ -> VR : 5
+KJ -> VS : 6
+KK -> VT : 7
+KK -> VU : 1
+KL -> VV : 2
+KL -> VW : 3
+KM -> VX : 4
+KM -> VY : 5
+KN -> VZ : 6
+KN -> WA : 7
+KO -> WB : 1
+KO -> WC : 2
+KP -> WD : 3
+KP -> WE : 4
+KQ -> WF : 5
+KQ -> WG : 6
+KR -> WH : 7
+KR -> WI : 1
+KS -> WJ : 2
+KS -> WK : 3
+KT -> WL : 4
+KT -> WM : 5
+KU -> WN : 6
+KU -> WO : 7
+KV -> WP : 1
+KV -> WQ : 2
+KW -> WR : 3
+KW -> WS : 4
+KX -> WT : 5
+KX -> WU : 6
+KY -> WV : 7
+KY -> WW : 1
+KZ -> WX : 2
+KZ -> WY : 3
+LA -> WZ : 4
+LA -> XA : 5
+LB -> XB : 6
+LB -> XC : 7
+LC -> XD : 1
+LC -> XE : 2
+LD -> XF : 3
+LD -> XG : 4
+LE -> XH : 5
+LE -> XI : 6
+LF -> XJ : 7
+LF -> XK : 1
+LG -> XL : 2
+LG -> XM : 3
+LH -> XN : 4
+LH -> XO : 5
+LI -> XP : 6
+LI -> XQ : 7
+LJ -> XR : 1
+LJ -> XS : 2
+LK -> XT : 3
+LK -> XU : 4
+LL -> XV : 5
+LL -> XW : 6
+LM -> XX : 7
+LM -> XY : 1
+LN -> XZ : 2
+LN -> YA : 3
+LO -> YB : 4
+LO -> YC : 5
+LP -> YD : 6
+LP -> YE : 7
+LQ -> YF : 1
+LQ -> YG : 2
+LR -> YH : 3
+LR -> YI : 4
+LS -> YJ : 5
+LS -> YK : 6
+LT -> YL : 7
+LT -> YM : 1
+LU -> YN : 2
+LU -> YO : 3
+LV -> YP : 4
+LV -> YQ : 5
+LW -> YR : 6
+LW -> YS : 7
+LX -> YT : 1
+LX -> YU : 2
+LY -> YV : 3
+LY -> YW : 4
+LZ -> YX : 5
+LZ -> YY : 6
+MA -> YZ : 7
+MA -> ZA : 1
+MB -> ZB : 2
+MB -> ZC : 3
+MC -> ZD : 4
+MC -> ZE : 5
+MD -> ZF : 6
+MD -> ZG : 7
+ME -> ZH : 1
+ME -> ZI : 2
+MF -> ZJ : 3
+MF -> ZK : 4
+MG -> ZL : 5
+MG -> ZM : 6
+MH -> ZN : 7
+MH -> ZO : 1
+MI -> ZP : 2
+MI -> ZQ : 3
+MJ -> ZR : 4
+MJ -> ZS : 5
+MK -> ZT : 6
+MK -> ZU : 7
+ML -> ZV : 1
+ML -> ZW : 2
+MM -> ZX : 3
+MM -> ZY : 4
+MN -> ZZ : 5
+MN -> AAA : 6
+MO -> AAB : 7
+MO -> AAC : 1

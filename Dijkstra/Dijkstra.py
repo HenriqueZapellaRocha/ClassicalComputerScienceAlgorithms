@@ -1,6 +1,7 @@
 import heapq
+from locale import currency
 import math
-
+import time
 
 
 
@@ -44,14 +45,13 @@ def dijkstra(graph,start):
     
 graph = {}
 vertices = []
-with open('/Users/henriquezapellarocha/Documents/pythonStudies/Dijkstra/grafo.txt', 'r') as archive:
+with open('Dijkstra/grafo.txt', 'r') as archive:
     for line in archive:
         originVertex, rest = line.split(" -> ")
-        finalVertex, edgeWeight = rest.strip().split(": ")
-        addToGraph(graph,int(originVertex),int(finalVertex),int(edgeWeight),vertices)
+        finalVertex, edgeWeight = rest.strip().split(" : ")
+        addToGraph(graph,originVertex,finalVertex,int(edgeWeight),vertices)
 
+dijkstraa = dijkstra(graph,"A")
+print(dijkstraa)
+print(len(dijkstraa))
 
-
-
-
-print(dijkstra(graph,1))
