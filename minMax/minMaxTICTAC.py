@@ -1,5 +1,6 @@
+#minamax algorithim implemented in a simple tic tac game
 import math
-from tkinter import scrolledtext
+
 
 
 board = []
