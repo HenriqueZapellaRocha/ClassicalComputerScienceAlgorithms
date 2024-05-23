@@ -1,5 +1,6 @@
 #minamax algorithim implemented in a simple tic tac game
 import math
+from xmlrpc.client import Boolean
 
 
 
@@ -13,10 +14,11 @@ def printBoard() -> None:
         else:
             print(board[i] + "|", end='')
             
-def makeMove(position: int, value:str) -> None:
+def makeMove(position: int, value:str) -> Boolean:
     if board[position] == ' ':
         board[position] = value
-
+        return True
+    return False
 
 def startBoard():
     for i in range(9):
@@ -29,19 +31,19 @@ def verifyWinner(value : str):
         return True 
     elif board[3] == board[4] == board[5] == value:
         return True
-    elif  board[6] == board[7] == board[8] == value:
+    elif board[6] == board[7] == board[8] == value:
         return True
-    elif  board[0] == board[1] == board[2] == value:
+    elif board[0] == board[1] == board[2] == value:
         return True
     elif board[0] == board[4] == board[8] == value:
         return True
-    elif  board[2] ==  board[4] ==  board[6] == value:
+    elif board[2] == board[4] == board[6] == value:
         return True
-    elif  board[0] ==  board[3] ==  board[6] == value:
+    elif board[0] == board[3] == board[6] == value:
         return True
-    elif  board[1] ==  board[4] ==  board[7] == value:
+    elif board[1] == board[4] == board[7] == value:
         return True
-    elif  board[2] ==  board[5] ==  board[8] == value:
+    elif board[2] == board[5] == board[8] == value:
         return True
     else:
         return False
@@ -99,7 +101,9 @@ printBoard()
 while True:
 
     print('\n')
-    makeMove(int(input("enter position:")), 'X')
+    bool = False 
+    while bool == False:
+        bool = makeMove(int(input("enter position:")), 'X')
     printBoard()
     if verifyWinner('X'):
         exit(0)
