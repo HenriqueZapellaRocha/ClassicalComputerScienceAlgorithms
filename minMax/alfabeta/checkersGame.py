@@ -1,6 +1,6 @@
 
 
-board = [ 
+board = [
    #  0   1   2   3   4   5   6   7
     ['-','2','-','2','-','2','-','2'],#0
     ['2','-','2','-','2','-','2','-'],#1
@@ -17,9 +17,9 @@ def printBoard():
         for j in range(8):
             print(board[i][j]+ ' ', end='')
         print()
-                
 
-def possibleMovesChecker(line:int, collumn:int):
+
+def possibleMovesChecker(line:int, collumn:int) -> set:
     if line < 8 and collumn < 8 and line >= 0 and collumn >= 0:
         possibleMoves = set()
         if board[line][collumn] == '2':
@@ -40,10 +40,19 @@ def possibleMovesChecker(line:int, collumn:int):
                 possibleMoves.add((line-1,collumn+1))
             elif line-2 >= 0 and collumn+2 < 8 and board[line-1][collumn+1] != board[line][collumn] and board[line-2][collumn+2] == '0':
                 possibleMoves.add((line-2,collumn+2))
-        return possibleMoves         
-    return None
-              
-              
-                
+        return possibleMoves
+    return set()
+
+def makeMove(positionX:int, positionY:int, newX:int, newY:int):
+    
+    move = {(newX, newY)}
+    if possibleMovesChecker(positionX, positionY).issuperset(move):
+        board[newX][newY] = '1'
+        board[positionX][positionY] = '-'
+    
+
+
 printBoard()
-print(possibleMovesChecker(4,1))
+makeMove(4,1,3,0)
+print()
+printBoard()
