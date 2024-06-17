@@ -3,8 +3,6 @@ import threading
 import time
 import random
 
-
-lock = threading.Lock()
 #creating the philosopher
 class philosopher: 
     
@@ -17,10 +15,13 @@ def dinner(phil:philosopher, id:int):
         print('philosopher think:'+ str(id))
         time.sleep(random.randrange(1,2))
         
-        
-        if phil.leftFork.acquire() and phil.rightFork.acquire():
+        if phil.leftFork.acquire(timeout=2) and phil.rightFork.acquire(timeout=2):
             print('philosopher eat:'+ str(id))
             time.sleep(random.randrange(1,2))
+            phil.leftFork.release()
+            phil.rightFork.release()
+        else:
+            print('ola')
             phil.leftFork.release()
             phil.rightFork.release()
         
